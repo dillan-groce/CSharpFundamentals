@@ -12,6 +12,16 @@ namespace _06_Methods
             SayHello("Dillan");
             int methodReturn = AddTwoNumbers(1, 2);
             Console.WriteLine(methodReturn);
+
+            AddTwoNumbers(3.05, 2.56);
+            AddTwoNumbers(3, 2.55); //--double value = int + duoble
+            AddTwoNumbers(3.66, 1); //--double value = double + int
+
+            AddTwoNumbers(3.0, 4);
+
+            //--DateTime birthday = new DateTime(1892, 12, 6);
+            int age = CalculateAge(new DateTime(1892, 12, 6));
+            Console.WriteLine($"My age is: {age}");
         }
         //--Access Modifer (PUBLIC)
         //--Return Type (VOID)
@@ -28,6 +38,22 @@ namespace _06_Methods
         {
             int sum = numOne + numTwo;
             return sum;
+        }
+        [TestMethod]
+        public double AddTwoNumbers(double numOne, double numTwo)
+        {
+            double sum = numOne + numTwo;
+            return sum;
+        }
+
+        [TestMethod]
+        public int CalculateAge(DateTime birthday)
+        {
+            TimeSpan ageSpan = DateTime.Now - birthday;
+            double totalAgeInYears = ageSpan.TotalDays / 365.25;
+            //--double floorValue = Math.Floor(totalAgeInYears)
+            int years = Convert.ToInt32(Math.Floor(totalAgeInYears));
+            return years;
         }
     }
 }
