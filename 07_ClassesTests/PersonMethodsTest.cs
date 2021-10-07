@@ -26,7 +26,7 @@ namespace _07_ClassesTests
 
             bool result = newCount == (count + 1) ? true : false;
 
-            //--(A)SSERT - 
+            //--(A)SSERT - AFter we have run our bethod, we need to compare what the method returned or the result of the method running to the expected using Assert Methods.
             Assert.IsTrue(result);
 
         }

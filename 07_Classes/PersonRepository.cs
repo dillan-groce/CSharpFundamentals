@@ -25,9 +25,9 @@ namespace _07_Classes
         //--Gold Challenge
         public void RemovePersonByName(string firstName)
         {
-            foreach(Person p in _listOfPeople)
+            foreach (Person p in _listOfPeople)
             {
-                if(p.FirstName == firstName)
+                if (p.FirstName == firstName)
                 {
                     _listOfPeople.Remove(p);
                 }
@@ -37,7 +37,7 @@ namespace _07_Classes
         //--Super Gold Challenge
         public void UpdatePerson(Person oldPerson, Person newPerson)
         {
-            foreach(Person p in _listOfPeople)
+            foreach (Person p in _listOfPeople)
             {
                 if (p == oldPerson)
                 {
@@ -45,9 +45,22 @@ namespace _07_Classes
                     p.LastName = newPerson.LastName;
                     p.DateOfBirth = newPerson.DateOfBirth;
 
-                    
+
                 }
+
             }
+        }
+
+        public bool AddAPerson(Person person)
+        {
+            int beforeCount = _listOfPeople.Count;
+            _listOfPeople.Add(person);
+            int afterCount = _listOfPeople.Count;
+            if (afterCount == (beforeCount + 1))
+            {
+                return true;
+            }
+            return false;
         }
     }
 }

@@ -27,6 +27,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ClassesConsole", "07_Cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_ClassesTests", "07_ClassesTests\07_ClassesTests.csproj", "{C63451C4-FFDF-46B2-A29D-49DF750CBC07}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_RepositoryPattern_Console", "08_RepositoryPattern_Console\08_RepositoryPattern_Console.csproj", "{C5017760-E9F8-4964-A101-1299F5D153B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_RepositoryPattern_Repo", "08_RepositoryPattern_Repo\08_RepositoryPattern_Repo.csproj", "{C3EC3808-48AF-4531-A6B0-135C047AA6EC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +85,14 @@ Global
 		{C63451C4-FFDF-46B2-A29D-49DF750CBC07}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C63451C4-FFDF-46B2-A29D-49DF750CBC07}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C63451C4-FFDF-46B2-A29D-49DF750CBC07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5017760-E9F8-4964-A101-1299F5D153B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5017760-E9F8-4964-A101-1299F5D153B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5017760-E9F8-4964-A101-1299F5D153B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5017760-E9F8-4964-A101-1299F5D153B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3EC3808-48AF-4531-A6B0-135C047AA6EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3EC3808-48AF-4531-A6B0-135C047AA6EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3EC3808-48AF-4531-A6B0-135C047AA6EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3EC3808-48AF-4531-A6B0-135C047AA6EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
