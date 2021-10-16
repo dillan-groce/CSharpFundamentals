@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5017760-E9F8-4964-A101-1299F5D153B6}</ProjectGuid>
+    <ProjectGuid>{2A578AF9-3C7D-468B-8BB7-610C0D637D91}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_08_RepositoryPattern_Console</RootNamespace>
-    <AssemblyName>08_RepositoryPattern_Console</AssemblyName>
+    <RootNamespace>_10_InheritenceConsole</RootNamespace>
+    <AssemblyName>10_InheritenceConsole</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -54,6 +53,14 @@
     <ProjectReference Include="..\08_RepositoryPattern_Repo\08_RepositoryPattern_Repo.csproj">
       <Project>{C3EC3808-48AF-4531-A6B0-135C047AA6EC}</Project>
       <Name>08_RepositoryPattern_Repo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\10_Inheritence_ClassLibrary\10_Inheritence_ClassLibrary.csproj">
+      <Project>{28731262-624B-40C1-8AD1-7E583528F6CE}</Project>
+      <Name>10_Inheritence_ClassLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\10_StreamingContentInheritence\10_StreamingContentInheritence.csproj">
+      <Project>{681D2CE7-F6F9-49AA-AE55-62C6A534FBAD}</Project>
+      <Name>10_StreamingContentInheritence</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

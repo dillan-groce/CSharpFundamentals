@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C5017760-E9F8-4964-A101-1299F5D153B6}</ProjectGuid>
+    <ProjectGuid>{4A26858D-725E-4F91-939D-BFC6A1D0AA9D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_08_RepositoryPattern_Console</RootNamespace>
-    <AssemblyName>08_RepositoryPattern_Console</AssemblyName>
+    <RootNamespace>_11_InterfacesConsole_Part1</RootNamespace>
+    <AssemblyName>11_InterfacesConsole_Part1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,18 +43,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fruit Classes\Banana.cs" />
+    <Compile Include="Fruit Classes\Grape.cs" />
+    <Compile Include="Fruit Classes\IFruit.cs" />
+    <Compile Include="Fruit Classes\Orange.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\08_RepositoryPattern_Repo\08_RepositoryPattern_Repo.csproj">
-      <Project>{C3EC3808-48AF-4531-A6B0-135C047AA6EC}</Project>
-      <Name>08_RepositoryPattern_Repo</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
